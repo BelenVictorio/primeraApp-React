@@ -12,10 +12,10 @@ import React from 'react'
                 <div className="row">
 
                   {
-                    props.genres.map(genre =>{
+                    props.genres.map((genre,index) =>{
                       return (
 
-                      <div className="col-lg-6 mb-4">
+                      <div className="col-lg-6 mb-4" key={genre + index}>
                         <div className="card bg-dark text-white shadow">
                           <div className="card-body">{genre}</div>
                         </div>
